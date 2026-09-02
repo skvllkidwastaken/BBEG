@@ -20,6 +20,7 @@ input {
   width: 300px;
   border-radius: 50px;
   font-family: Scoutie;
+  border: solid red 3px;
 }
 
 .search {
@@ -39,6 +40,7 @@ input {
   color: white;
   cursor: pointer;
   margin-left: 10px;
+  border: solid black;
 }
 
 .datasheet {
@@ -46,13 +48,14 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: red 10px;
+  border: red 5px solid;
   background-color: white;
   width: 75%;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 50px;
   font-family: Scoutie;
+  padding-bottom: 50px;
 }
 
 .name {
