@@ -8,19 +8,38 @@
   <body>
     <h1>BBEG</h1>
     <div class="search">
-      <input type="text" placeholder="Search monsters" id="Searchbar">
+      <input type="text" placeholder="Search monsters" id="searchbar">
       <button id="search-confirm">></button>
     </div>
-    <div class="datasheet">
-      <h2 class="name">Name</h3>
+    <div class="datasheet" id="sheet" hidden>
+      <h2 class="name" id="name">Name</h2>
       <div class="stats">
-        <h3>STR</h3>
-        <h3>DEX</h3>
-        <h3>CON</h3>
-        <h3>INT</h3>
-        <h3>WIS</h3>
-        <h3>CHR</h3>
+        <div>
+          <h3>STR</h3>
+          <span class="stat-value" data-stat="str">--</span>
+        </div>
+        <div>
+          <h3>DEX</h3>
+          <span class="stat-value" data-stat="dex">--</span>
+        </div>
+        <div>
+          <h3>CON</h3>
+          <span class="stat-value" data-stat="con">--</span>
+        </div>
+        <div>
+          <h3>INT</h3>
+          <span class="stat-value" data-stat="int">--</span>
+        </div>
+        <div>
+          <h3>WIS</h3>
+          <span class="stat-value" data-stat="wis">--</span>
+        </div>
+        <div>
+          <h3>CHR</h3>
+          <span class="stat-value" data-stat="chr">--</span>
+        </div>
       </div>
     </div>
+    <script src="renderer.js"></script>
   </body>
 </html>

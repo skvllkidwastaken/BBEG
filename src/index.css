@@ -52,6 +52,7 @@ input {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 50px;
+  font-family: Scoutie;
 }
 
 .name {
@@ -67,6 +68,10 @@ input {
   justify-content: center;
 }
 
-.stats > h3 {
+.stats > div {
   margin: 10px;
+}
+
+.datasheer[hidden] {
+  display: none;
 }

@@ -47,9 +47,3 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-window.onload = startup
-
-function startup() {
-  
-}
