@@ -3,25 +3,70 @@ body {
   background-color: gray;
 }
 
+@font-face {
+  font-family: Scoutie;
+  src: url(./fonts/ScoutieSans-VariableFont_wght.ttf);
+}
+
 h1 {
   text-align: center;
   font-family: Scoutie;
+  color: red;
 }
 
 input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
   text-align: center;
   height: 25px;
   width: 300px;
-  margin-top: 50px;
   border-radius: 50px;
   font-family: Scoutie;
 }
 
-@font-face {
-  font-family: Scoutie;
-  src: url(./fonts/ScoutieSans-VariableFont_wght.ttf);
+.search {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-confirm {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.datasheet {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red 10px;
+  background-color: white;
+  width: 75%;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stats > h3 {
+  margin: 10px;
 }
