@@ -14,7 +14,8 @@ const statElements = {
 
 const hitPointElements = {
     hitp: document.querySelector('[data-hp="hp"]'),
-    hitd: document.querySelector('[data-hp="hpd"]')
+    hitd: document.querySelector('[data-hp="hpd"]'),
+    hitr: document.querySelector('[data-hp="hpr"]')
 };
 
 async function searchMonster() {
@@ -49,6 +50,7 @@ async function searchMonster() {
 
         hitPointElements.hitp.textContent = monster.hit_points;
         hitPointElements.hitd.textContent = monster.hit_dice;
+        hitPointElements.hitr.textContent = monster.hit_points_roll;
 
         sheet.hidden = false;
     } catch (error) {
