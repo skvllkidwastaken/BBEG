@@ -12,6 +12,11 @@ const statElements = {
     chr: document.querySelector('[data-stat="chr"]'),
 };
 
+const hitPointElements = {
+    hitp: document.querySelector('[data-hp="hp"]'),
+    hitd: document.querySelector('[data-hp="hpd"]')
+};
+
 async function searchMonster() {
     const monsterName = searchBar.value.trim();
 
@@ -42,11 +47,18 @@ async function searchMonster() {
         statElements.wis.textContent = monster.wisdom;
         statElements.chr.textContent = monster.charisma;
 
+        hitPointElements.hitp.textContent = monster.hit_points;
+        hitPointElements.hitd.textContent = monster.hit_dice;
+
         sheet.hidden = false;
     } catch (error) {
         nameElement.textContent = 'Monster not found';
 
         Object.values(statElements).forEach((element) => {
+            element.textContent = '--';
+        });
+
+        Object.values(hitPointElements).forEach((element) => {
             element.textContent = '--';
         });
 

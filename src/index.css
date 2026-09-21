@@ -49,13 +49,14 @@ input {
   align-items: center;
   justify-content: center;
   border: red 5px solid;
-  background-color: white;
+  background-color: darkslategray;
   width: 75%;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 50px;
   font-family: Scoutie;
   padding-bottom: 50px;
+  color: white;
 }
 
 .name {
@@ -75,6 +76,17 @@ input {
   margin: 10px;
 }
 
-.datasheer[hidden] {
+.datasheet[hidden] {
   display: none;
+}
+
+.hitpoint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hitpoint > div {
+  margin: 10px;
 }
